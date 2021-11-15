@@ -12,6 +12,35 @@ body{
 
 /*Typography*/
 
+h1{
+    
+}
+
+h2{
+    
+}
+
+p{
+    
+}
+
+ul{
+    list-style-type: none;
+    
+}
+
+ul li{
+    
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+li:hover{
+    
+}
+
 /*Header*/
 
 /*Main*/
