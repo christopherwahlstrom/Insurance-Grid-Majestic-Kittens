@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Frank Ruhl Libre">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira Sans">
     <title>Contact site</title>
 </head>
 <body>
+    <div class="wrapper">
     <article class="contact-top-section">
         <section class="big-blue-section">
             <h1 class="headline-black">Oh hello there!</h1>
-        </section>
-        <section>
             <img class="family-man-child" src="images/man-and-child.png" alt="father and son">
         </section>
         <nav class="navigation">
@@ -25,11 +26,12 @@
         </nav>
     </article>
     <div class="contact">
-        <h1 class="headline-white">Whats on your mind?</h1>
+        <h1 class="headline-white">Whats on your <br> mind?</h1>
         <form action="">
-        Your email<input type="email" name="email-adress" id="email">
-        Your message<input type="text" placeholder="Dear Insurance company...">
-        <input type="submit">SEND MESSAGE</input>
+        Your email<br><input class="email" type="email" name="email-adress" id="email">
+        Your message<br><input class="message" type="text" placeholder="Dear Insurance company...">
+        <a class="send" href="#">SEND MESSAGE</a>
+
         </form>
     </div>
     <div class="map">
@@ -40,6 +42,7 @@
         </aside>
         <img src="images/needle.png" alt="mapp-needle">
     </div>
-    
+    <div class="graycolor"></div>
+</div>
 </body>
 </html>
