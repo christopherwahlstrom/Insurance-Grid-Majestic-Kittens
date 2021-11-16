@@ -123,10 +123,6 @@ h2{
 p{
     font-size: 14px;
 }
-
-
-
-
 ul li a{
     text-decoration: none;
     color: black;
@@ -217,6 +213,7 @@ nav{
 
 /*Footer*/
 
+
 /*----------------Contact site----------*/
 
 .wrapper .contact-top-section{
@@ -299,3 +296,4 @@ nav{
     height: 340px;
     background-color: #777574;
 }
+
