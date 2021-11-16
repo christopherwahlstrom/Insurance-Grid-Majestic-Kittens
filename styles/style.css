@@ -28,7 +28,7 @@ h2{
 }
 
 p{
-    
+    font-size: 14px;
 }
 
 ul{
@@ -39,9 +39,6 @@ ul{
     align-items: center;
 }
 
-ul li{
-    
-}
 
 ul li a{
     text-decoration: none;
@@ -123,10 +120,99 @@ header{
     justify-content: center;
     align-items: center;
 }
-nav{
+header nav{
+   
     grid-column: 1/7;
     grid-row: 7/8;
 }
 /*Main*/
 
 /*Footer*/
+
+/*----------------Contact site----------*/
+.warpper{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.warpper .contact-top-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 0,5fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+.warpper .contact-top-section .big-blue-section{
+    max-width: 1000px;
+    background-color: #C7DDEA;
+    grid-column: 1/7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.warpper .contact-top-section .big-blue-section .headline-black{
+    margin: 0 5% 0 20%;
+}
+.warpper .contact-top-section .big-blue-section .family-man-child{
+    margin: 0 0 0 5%;
+}
+.warpper .contact-top-section .navigation{
+    background-color: #fff;
+    grid-column: 1/7;
+    grid-row: 2/3;
+}
+.warpper .contact{
+    height: 544px;
+    background-color: #A9A19E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.warpper .contact .headline-white{
+    width: 214;
+    font-size: 45px;
+    margin: 10% 0 0 0;
+    color: #fff;
+}
+.warpper .contact form{
+    font-size: 14px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    margin:10% 0 0 0 ;
+    color: #fff;
+    justify-content: space-around;
+    
+}
+.warpper .contact .email{
+    border-radius: 2px;
+    border: none;
+    height: 40px;
+}
+.warpper .contact .message{
+    height: 166px;
+    width: 334px;
+    border-radius: 2px;
+    border: none;
+}
+.warpper .contact .send{
+    font-size: 14px;
+    background-color: #fff;
+    width: 130px;
+    padding: 10px;
+    margin-left: 60%;
+    border-radius: 50px;
+    text-align: center;
+}
+.warpper .map{
+    height: 407px;
+    background-image: url('map-contact.png');
+    background-color: burlywood;
+}
+.warpper .graycolor{
+    height: 340px;
+    background-color: #777574;
+}
