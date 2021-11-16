@@ -1,3 +1,99 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap');
 
 *{
@@ -9,9 +105,6 @@ body{
     height: 100vh;
     margin: 0;
     background-color: #E5E5E5;
-    /*display: flex;
-    justify-content: center;
-    flex-direction: column;*/
 }
 
 /*Typography*/
@@ -31,13 +124,7 @@ p{
     font-size: 14px;
 }
 
-ul{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
+
 
 
 ul li a{
@@ -59,7 +146,7 @@ a{
 
 /*Header*/
 header{
-    max-width: 1000px;
+    max-width: 1002px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(6, 2fr);
@@ -120,8 +207,9 @@ header{
     justify-content: center;
     align-items: center;
 }
-header nav{
-   
+nav{
+    max-width: 1000px;
+    margin: 0 auto;
     grid-column: 1/7;
     grid-row: 7/8;
 }
@@ -130,19 +218,14 @@ header nav{
 /*Footer*/
 
 /*----------------Contact site----------*/
-.warpper{
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-.warpper .contact-top-section{
+
+.wrapper .contact-top-section{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(6, 0,5fr);
     grid-template-rows: repeat(1, 1fr);
 }
-.warpper .contact-top-section .big-blue-section{
+.wrapper .contact-top-section .big-blue-section{
     max-width: 1000px;
     background-color: #C7DDEA;
     grid-column: 1/7;
@@ -153,31 +236,31 @@ header nav{
 
     
 }
-.warpper .contact-top-section .big-blue-section .headline-black{
+.wrapper .contact-top-section .big-blue-section .headline-black{
     margin: 0 5% 0 20%;
 }
-.warpper .contact-top-section .big-blue-section .family-man-child{
+.wrapper .contact-top-section .big-blue-section .family-man-child{
     margin: 0 0 0 5%;
 }
-.warpper .contact-top-section .navigation{
+.wrapper .contact-top-section .navigation{
     background-color: #fff;
     grid-column: 1/7;
     grid-row: 2/3;
 }
-.warpper .contact{
+.wrapper .contact{
     height: 544px;
     background-color: #A9A19E;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.warpper .contact .headline-white{
+.wrapper .contact .headline-white{
     width: 214;
     font-size: 45px;
     margin: 10% 0 0 0;
     color: #fff;
 }
-.warpper .contact form{
+.wrapper .contact form{
     font-size: 14px;
     height: 350px;
     display: flex;
@@ -187,18 +270,18 @@ header nav{
     justify-content: space-around;
     
 }
-.warpper .contact .email{
+.wrapper .contact .email{
     border-radius: 2px;
     border: none;
     height: 40px;
 }
-.warpper .contact .message{
+.wrapper .contact .message{
     height: 166px;
     width: 334px;
     border-radius: 2px;
     border: none;
 }
-.warpper .contact .send{
+.wrapper .contact .send{
     font-size: 14px;
     background-color: #fff;
     width: 130px;
@@ -207,12 +290,12 @@ header nav{
     border-radius: 50px;
     text-align: center;
 }
-.warpper .map{
+.wrapper .map{
     height: 407px;
     background-image: url('map-contact.png');
     background-color: burlywood;
 }
-.warpper .graycolor{
+.wrapper .graycolor{
     height: 340px;
     background-color: #777574;
 }
