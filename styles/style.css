@@ -132,6 +132,7 @@ ul{
     justify-content: space-around;
     align-items: center;
 }
+
 ul li a{
     text-decoration: none;
     color: black;
@@ -219,6 +220,7 @@ header{
 /*Main*/
 
 /*Footer*/
+
 
 /*----------------Contact site----------*/
 
@@ -327,3 +329,4 @@ header{
     height: 340px;
     background-color: #777574;
 }
+
