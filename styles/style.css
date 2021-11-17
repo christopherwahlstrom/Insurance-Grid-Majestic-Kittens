@@ -505,10 +505,6 @@ header{
     color: #fff;
     margin: 10% 0 0 10%;
 }
-.wrapper .map .text .needle{
-    width: 50px;
-    height: 50px;
-}
 .wrapper .graycolor{
     height: 340px;
     background-color: #777574;
