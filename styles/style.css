@@ -219,10 +219,23 @@ header{
 }
 /*Main*/
 
+
+/*6 boxes section, lower main part*/
+
+.boxes{
+    max-width: 1002px;
+    margin: 0 auto;}
+
+
 /*Footer*/
 
 
 /*----------------Contact site----------*/
+
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
 .wrapper .contact-top-section{
     width: 100%;
