@@ -224,8 +224,146 @@ header{
 
 .boxes{
     max-width: 1002px;
-    margin: 0 auto;}
+    height: 680px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
 
+.index-box{
+   width: 334px;
+   height: 340px;
+   display: grid;
+}
+
+.index-boxes-square-1{
+    width: 334px;
+    height: 340px;
+    grid-column: 1 ;
+    grid-row: 1/2;
+    background-color: #C7DDEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.index-boxes-square-2{
+    width: 334px;
+    height: 340px;
+    grid-column: 2 span 2;
+    grid-row: 1/2;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.index-boxes-square-3{
+    width: 334px;
+    height: 340px;
+    grid-column: 2 span 2;
+    grid-row: 1/2;
+    background-color: #EBEBEB;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.index-boxes-square-4{
+    width: 334px;
+    height: 340px;
+    grid-column: 1/2;
+    grid-row: 2/2;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+   
+}
+
+.index-boxes-square-5{
+    width: 334px;
+    height: 340px;
+    grid-column: 2/2;
+    grid-row: 2/2;
+    background-color: #F17949;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+   
+}
+
+.index-boxes-square-6{
+    width: 334px;
+    height: 340px;
+    background-color: #FFF;
+    display: flex;
+    
+    
+}
+
+.numbers{
+    width: 100px;
+    height: 100px;
+    font-family: 'Frank Ruhl Libre';
+    font-style: normal;
+    font-size: 35px;
+    line-height: 35px;
+    opacity: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+
+.boxes-text{
+    width: 257px;
+    height: 113px;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.index-boxes-square-2 .boxes-text{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.index-boxes-square-3 .boxes-text{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.index-boxes-square-4 .boxes-text{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.index-boxes-square-5 .boxes-text{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.index-boxes-square-6 .boxes-text{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
 /*Footer*/
 
