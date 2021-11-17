@@ -94,7 +94,11 @@ input, select {
 }
 
 
+/*Our code!!*/
+
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap');
+
+
 
 *{
     box-sizing: border-box;
@@ -132,30 +136,73 @@ p{
     font-size: 14px;
     font-family: "Fira Sans";
     font-weight: 500;
+}
+
+.text-black{
+    font-family: "Fira Sans";
+    font-weight: 700;
+    font-size: 14px;
     line-height: 24px;
     color: black;
 }
-ul{
+
+.text-white{
+    font-family: "Fira Sans";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+}
+
+span{
+    color: white;
+}
+
+.button{
+    margin: 50px 0 0 15%;
+    background-color: #fff;
+    width: 131px;
+    height: 39px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    font-family: "Fira Sans";
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* navigation*/
+.navigation{
+    grid-column: 1/7;
+    grid-row: 7/8;
+    height: 68px;
+}
+
+.menu{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 5px;
+    width: 100%;
+    height: 100%;
 }
 
-ul li a{
-    text-decoration: none;
+.nav-links{
     color: black;
     font-family: "Fira Sans";
+    font-weight: 600;
     opacity: 40%;
     font-size: 12px;
-
 }
 
-li a:hover{
+.nav-links-current-page{
     color: black;
-    opacity: 100%;
+    font-family: "Fira Sans";
+    font-weight: 600;
+    font-size: 12px;
 }
+
 a{
     text-decoration: none;
     color: black;
@@ -210,9 +257,9 @@ header{
 .main-top .big-blue-section .article span{
     color: #fff;
 }
+
 .main-top .big-blue-section .button{
     margin: 50px 0 0 15%;
-    
 }
 .family-picture{
     width: 80%;
@@ -355,8 +402,146 @@ nav{
 
 .boxes{
     max-width: 1002px;
-    margin: 0 auto;}
+    height: 680px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
 
+.index-box{
+   width: 334px;
+   height: 340px;
+   display: grid;
+}
+
+.index-boxes-square-1{
+    width: 334px;
+    height: 340px;
+    grid-column: 1 ;
+    grid-row: 1/2;
+    background-color: #C7DDEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.index-boxes-square-2{
+    width: 334px;
+    height: 340px;
+    grid-column: 2 span 2;
+    grid-row: 1/2;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.index-boxes-square-3{
+    width: 334px;
+    height: 340px;
+    grid-column: 2 span 2;
+    grid-row: 1/2;
+    background-color: #EBEBEB;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.index-boxes-square-4{
+    width: 334px;
+    height: 340px;
+    grid-column: 1/2;
+    grid-row: 2/2;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+   
+}
+
+.index-boxes-square-5{
+    width: 334px;
+    height: 340px;
+    grid-column: 2/2;
+    grid-row: 2/2;
+    background-color: #F17949;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+   
+}
+
+.index-boxes-square-6{
+    width: 334px;
+    height: 340px;
+    background-color: #FFF;
+    display: flex; 
+    justify-content: center;
+    align-content: center;
+}
+
+.numbers{
+    width: 100px;
+    height: 100px;
+    font-family: 'Frank Ruhl Libre';
+    font-style: normal;
+    font-size: 35px;
+    line-height: 35px;
+    opacity: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+
+.boxes-text{
+    width: 257px;
+    height: 113px;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.index-boxes-square-2 .boxes-text{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.index-boxes-square-3 .boxes-text{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.index-boxes-square-4 .boxes-text{
+   display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.index-boxes-square-5 .boxes-text{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.index-boxes-square-6 .boxes-text{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
 /*Footer*/
 
@@ -391,18 +576,7 @@ nav{
 .wrapper .contact-top-section .big-blue-section .family-man-child{
     margin: 0 0 0 5%;
 }
-.wrapper .contact-top-section .navigation{
-    background-color: #fff;
-    grid-column: 1/7;
-    grid-row: 2/3;
-    
-}
-.wrapper .contact-top-section .navigation .menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
+
 .wrapper .contact{
     height: 544px;
     background-color: #A9A19E;
@@ -430,17 +604,30 @@ nav{
     border-radius: 2px;
     border: none;
     height: 40px;
+    margin-bottom: auto;
 }
 .wrapper .contact #message{
     height: 166px;
     width: 334px;
     border-radius: 2px;
     border: none;
+    
 }
-.wrapper .contact .send{
+
+::placeholder{
+    color: black;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    position: absolute;
+    padding: 1rem;
+}
+
+.wrapper .contact .button{
     font-size: 14px;
     background-color: #fff;
-    width: 130px;
+    width: 131px;
+    height: 39px;
     padding: 10px;
     margin-left: 60%;
     border-radius: 50px;
@@ -449,7 +636,6 @@ nav{
 .wrapper .map{
     height: 407px;
     background-image: url('../images/map-contact.png');
-    background-color: burlywood;
     display: flex;
     flex-direction: row;
     
