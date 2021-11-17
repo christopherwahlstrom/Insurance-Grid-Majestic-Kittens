@@ -126,6 +126,17 @@ h2{
     font-size: 32px;
     color: #fff;
 }
+h6{
+    font-size: 11px;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 14px;
+    font-family: "Fira Sans";
+    font-weight: 500;
+}
 
 .text-black{
     font-family: "Fira Sans";
@@ -194,15 +205,36 @@ span{
 
 a{
     text-decoration: none;
+    color: black;
+    font-family: "Fira Sans";
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
 }
-
+button{
+    background-color: #fff;
+    width: 131px;
+    height: 39px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    font-family: "Fira Sans";
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.headline-white{
+    color: #fff;
+}
+.headline-black{
+    color: black;
+}
 /*Header*/
 header{
     max-width: 1002px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(6, 2fr);
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
 
 }
 .main-top{
@@ -212,19 +244,22 @@ header{
     grid-row: 1/7;
 }
 .main-top .big-blue-section .headline-black{
-    font-family: "Frank Ruhl Libre";
-    margin: 0 0 0 15%;
+    margin: 71px 0 0 15%;
     font-weight: 600;
 }
-.main-top .big-blue-section .text{
-    font-family: "Fira Sans";
+.main-top .big-blue-section .article{
+    color: black;
     width: 270px;
     font-size: 14px;
     line-height: 24px;
-    margin: 0 0 0 15%; 
+    margin: 5% 0 0 15%; 
 }
-.main-top .big-blue-section .text span{
+.main-top .big-blue-section .article span{
     color: #fff;
+}
+
+.main-top .big-blue-section .button{
+    margin: 50px 0 0 15%;
 }
 .family-picture{
     width: 80%;
@@ -239,6 +274,7 @@ header{
     justify-content: center;
     align-items: center;
 }
+
 .main-top-yellow{
     background-color: #FFB939;
     grid-column: 4/7;
@@ -248,10 +284,120 @@ header{
     justify-content: center;
     align-items: center;
 }
-
+nav{
+    height: 50px;
+    padding: 10px 0 10px 0;
+}
 /*Main*/
+.part-one{
+    height: 618px;
+    background-color: #A9A19E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.part-one .top-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-around;
+    margin: 0 0 -22px 0;
+}
+.part-one  .top-text .left{
+    width: 314px;
+}
+.part-one .top-text .left .button{
+    margin: 55px 0 0 0;
+}
+.part-one .top-text .text{
+    width: 280px;
+    color: black;
+    margin: 0 0 0 50px;
+}
+.img-grupp, .top-part{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.grupp-img{
+    margin: 0 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-
+}
+.bgd-img-blue, .bgd-img-orange, .bgd-img-yellow{
+    width: 236px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    transform: translateY(125px);
+}
+.bgd-img-blue{
+    background-color: #C7DDEA;
+}
+.bgd-img-yellow{
+    background-color: #FAB131;
+}
+.bgd-img-orange{
+    background-color: #F17949;
+}
+.grupp-img img{
+    object-fit: cover;
+    object-position: 0 0;
+    height: 140px;
+    width: 96px;
+}
+.bgdcolor, .text-bgd{
+    width: 256px;
+    background-color: #fff;
+    height: 166px;
+    
+}
+.bgdcolor{
+    border-radius: 10px 10px 0 0;
+}
+.bgdcolor h3{
+    margin-top: 140px;
+}
+.part-two{
+    height: 680px;
+    background-color: #FAB131;
+    text-align: center;
+}
+.part-two .top-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.part-two .top-part .text-bgd{
+    margin: 0 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+}
+.part-two .top-part .text-bgd p{
+    width: 214px;
+    color: black;
+    font-size: 11px;
+    line-height: 18px;
+    margin: 14px 10px 0 0;
+}
+.part-two .bottom-part{
+    margin-top: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.part-two .bottom-part p{
+    width: 442px;
+    color: black;
+    margin-top: 5f1px;
+}
 /*6 boxes section, lower main part*/
 
 .boxes{
@@ -460,7 +606,7 @@ header{
     height: 40px;
     margin-bottom: auto;
 }
-.wrapper .contact .message{
+.wrapper .contact #message{
     height: 166px;
     width: 334px;
     border-radius: 2px;
@@ -498,12 +644,12 @@ header{
     width: 323px;
     height: 206px;
     background-color: #FAB131;
-    margin: 10% 0 0 10%;
+    margin: 45px 0 0 10%;
     
 }
 .wrapper .map .text .headline-white, p{
     color: #fff;
-    margin: 10% 0 0 10%;
+    margin: 22px 0 0 22px;
 }
 .wrapper .graycolor{
     height: 340px;
