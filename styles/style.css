@@ -126,22 +126,17 @@ h2{
     font-size: 32px;
     color: #fff;
 }
-h6{
-    font-size: 11px;
-    color: black;
-    text-align: center;
-    margin-bottom: 10px;
-}
+
 p{
-    font-size: 14px;
     font-family: "Fira Sans";
-    font-weight: 500;
+    color: black;
+    margin-bottom: 10px;
 }
 
 .text-black{
-    font-family: "Fira Sans";
+    width: 270px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 11px;
     line-height: 24px;
     color: black;
 }
@@ -211,6 +206,10 @@ a{
     font-size: 10px;
     line-height: 12px;
 }
+.menu .nav-links a:hover{
+    color: #000;
+    opacity: 100%;
+}
 button{
     background-color: #fff;
     width: 131px;
@@ -233,8 +232,8 @@ header{
     max-width: 1002px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(6, 2fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 167px);
+    grid-template-rows: repeat(6, 91px);
 
 }
 .main-top{
@@ -262,8 +261,10 @@ header{
     margin: 50px 0 0 15%;
 }
 .family-picture{
-    width: 80%;
-    margin-left: 20%;
+    width: 286px;
+    height: 279px;
+    margin-left: 40%;
+    transform: translateY(-105px);
 }
 .main-top-orange{
     background-color: #F17949;
@@ -273,6 +274,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .main-top-yellow{
@@ -283,6 +285,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 nav{
     height: 50px;
@@ -306,14 +309,17 @@ nav{
 }
 .part-one  .top-text .left{
     width: 314px;
+    /*transform: translateX(-70px);*/
 }
 .part-one .top-text .left .button{
     margin: 55px 0 0 0;
 }
 .part-one .top-text .text{
     width: 280px;
+    font-size: 14px;
     color: black;
-    margin: 0 0 0 50px;
+    margin: 0 0 0 150px;
+    line-height: 24px;
 }
 .img-grupp, .top-part{
     display: flex;
@@ -396,7 +402,8 @@ nav{
 .part-two .bottom-part p{
     width: 442px;
     color: black;
-    margin-top: 5f1px;
+    font-size: 14px;
+    line-height: 20px;
 }
 /*6 boxes section, lower main part*/
 
@@ -424,6 +431,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     
 }
 
@@ -434,7 +442,7 @@ nav{
     grid-row: 1/2;
     background-color: #FFF;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
 }
 
@@ -445,7 +453,7 @@ nav{
     grid-row: 1/2;
     background-color: #EBEBEB;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
     
 }
@@ -457,7 +465,7 @@ nav{
     grid-row: 2/2;
     background-color: #FFF;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
    
 }
@@ -469,7 +477,7 @@ nav{
     grid-row: 2/2;
     background-color: #F17949;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
    
 }
@@ -479,7 +487,7 @@ nav{
     height: 340px;
     background-color: #FFF;
     display: flex; 
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
 }
 
@@ -491,60 +499,43 @@ nav{
     font-size: 35px;
     line-height: 35px;
     opacity: 40%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding-left: 1rem;
-    padding-top: 0.5rem;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
 }
 
 .boxes-text{
-    width: 257px;
+    width: 334px;
     height: 113px;
     font-family: 'Fira Sans';
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
     line-height: 20px;
+    text-align: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 98px;
+}
+/*Footer*/
+footer{
+    width: 100%;
+    background-color: #777574;
+    height: 408px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .tap-top{
+    width: 100%;
+    height: 68px;
+    background-color: #A9A19E;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-self: center;
-    align-self: center;
 }
-
-.index-boxes-square-2 .boxes-text{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.index-boxes-square-3 .boxes-text{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.index-boxes-square-4 .boxes-text{
-   display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.index-boxes-square-5 .boxes-text{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.index-boxes-square-6 .boxes-text{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-/*Footer*/
-
 
 /*----------------Contact site----------*/
 
@@ -592,6 +583,7 @@ nav{
 }
 .wrapper .contact form{
     font-size: 14px;
+    font-family: "Fira Sans";
     height: 350px;
     display: flex;
     flex-direction: column;
@@ -613,7 +605,9 @@ nav{
     border: none;
     
 }
-
+input , textarea{
+    margin-top: 10px;
+}
 ::placeholder{
     color: black;
     font-family: 'Fira Sans', sans-serif;
@@ -623,15 +617,8 @@ nav{
     padding: 1rem;
 }
 
-.wrapper .contact .button{
-    font-size: 14px;
-    background-color: #fff;
-    width: 131px;
-    height: 39px;
-    padding: 10px;
-    margin-left: 60%;
-    border-radius: 50px;
-    text-align: center;
+.wrapper .contact .send{
+    margin: 20px 0 0 55%;
 }
 .wrapper .map{
     height: 407px;
@@ -640,14 +627,17 @@ nav{
     flex-direction: row;
     
 }
-.wrapper .map .text{
+.wrapper .map .adress{
     width: 323px;
     height: 206px;
     background-color: #FAB131;
-    margin: 45px 0 0 10%;
+    margin: 45px 0 0 86px;
     
 }
-.wrapper .map .text .headline-white, p{
+.wrapper .map .adress .text-white{
+    margin-left: 22px;
+}
+.wrapper .map .adress .headline-white{
     color: #fff;
     margin: 22px 0 0 22px;
 }
