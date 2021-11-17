@@ -94,7 +94,11 @@ input, select {
 }
 
 
+/*Our code!!*/
+
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap');
+
+
 
 *{
     box-sizing: border-box;
@@ -126,20 +130,48 @@ h2{
 p{
     font-size: 14px;
 }
-ul{
+
+.button{
+    margin: 50px 0 0 15%;
+    background-color: #fff;
+    width: 131px;
+    height: 39px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    font-family: "Fira Sans";
+    font-weight: 700;
+    font-size: 10px;
+}
+
+/* navigation*/
+.navigation{
+    grid-column: 1/7;
+    grid-row: 7/8;
+    height: 68px;
+}
+
+.menu{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
-ul li a{
-    text-decoration: none;
+.nav-links{
     color: black;
     font-family: "Fira Sans";
+    font-weight: 600;
     opacity: 40%;
     font-size: 12px;
+}
 
+.nav-links-current-page{
+    color: black;
+    font-family: "Fira Sans";
+    font-weight: 600;
+    font-size: 12px;
 }
 
 li a:hover{
@@ -149,6 +181,13 @@ li a:hover{
 a{
     text-decoration: none;
 }
+
+.nav-links-current-page{
+    color: black;
+    opacity: 100%;
+}
+
+
 
 /*Header*/
 header{
@@ -180,17 +219,6 @@ header{
 .main-top .big-blue-section .text span{
     color: #fff;
 }
-.main-top .big-blue-section .button{
-    margin: 50px 0 0 15%;
-    background-color: #fff;
-    width: 131px;
-    height: 39px;
-    border: 1px solid #fff;
-    border-radius: 50px;
-    font-family: "Fira Sans";
-    font-weight: 700;
-    font-size: 10px;
-}
 .family-picture{
     width: 80%;
     margin-left: 20%;
@@ -213,10 +241,7 @@ header{
     justify-content: center;
     align-items: center;
 }
-.navigation{
-    grid-column: 1/7;
-    grid-row: 7/8;
-}
+
 /*Main*/
 
 
@@ -348,7 +373,7 @@ header{
 }
 
 .index-boxes-square-4 .boxes-text{
-    display: flex;
+   display: flex;
     justify-content: center;
     align-content: center;
 }
@@ -398,18 +423,7 @@ header{
 .wrapper .contact-top-section .big-blue-section .family-man-child{
     margin: 0 0 0 5%;
 }
-.wrapper .contact-top-section .navigation{
-    background-color: #fff;
-    grid-column: 1/7;
-    grid-row: 2/3;
-    
-}
-.wrapper .contact-top-section .navigation .menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
+
 .wrapper .contact{
     height: 544px;
     background-color: #A9A19E;
@@ -437,14 +451,26 @@ header{
     border-radius: 2px;
     border: none;
     height: 40px;
+    margin-bottom: auto;
 }
 .wrapper .contact .message{
     height: 166px;
     width: 334px;
     border-radius: 2px;
     border: none;
+    
 }
-.wrapper .contact .send{
+
+::placeholder{
+    color: black;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    position: absolute;
+    padding: 1rem;
+}
+
+.wrapper .contact .button{
     font-size: 14px;
     background-color: #fff;
     width: 130px;
